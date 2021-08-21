@@ -1,0 +1,27 @@
+html {
+  background-color: #e9e6f2;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #4d457b;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.button {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #b8b3d2;
+  border: 0;
+  color: white;
+  transition: background-color 0.12s;
+  font-size: inherit;
+
+  &:hover {
+    background-color: #4d457b;
+  }
+}

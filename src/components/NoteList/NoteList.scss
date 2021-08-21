@@ -1,0 +1,103 @@
+.NoteList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  &__notes {
+    min-width: 100%;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 5px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  &__creator {
+    margin: 0 auto 20px;
+  }
+}
+
+.creator {
+  max-width: 600px;
+  align-self: stretch;
+  border: 1px solid #4d457b;
+  border-radius: 10px;
+
+  &__title {
+    background-color: #4d457b;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    text-align: center;
+  }
+
+  &__form {
+    padding: 10px;
+  }
+
+  &__title-text {
+    margin: 0;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  &__note {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__date {
+    align-self: flex-end;
+  }
+
+  &__image {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  &__social {
+    padding-top: 10px;
+    align-self: flex-end;
+  }
+
+  &__title {
+    background-color: #4d457b;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+}

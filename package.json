@@ -1,0 +1,64 @@
+{
+  "name": "devs-data-project",
+  "homepage": ".",
+  "version": "0.1.0",
+  "keywords": [],
+  "author": "Tetiana Yasko",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@types/node": "^12.20.18",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "bulma": "^0.9.3",
+    "node-sass": "^6.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "gh-pages": "^3.2.3",
+    "husky": "^4.3.8",
+    "lint-staged": "^11.1.1",
+    "stylelint": "^13.13.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint-css": "stylelint src/**/*.css src/**/*.scss --fix",
+    "lint": "npm run lint-js && npm run lint-css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint"
+    ],
+    "*.js": [
+      "eslint"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
